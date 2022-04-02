@@ -19,6 +19,8 @@ from sklearn.metrics import classification_report
 unicorn_master = pd.read_csv('Unicorn_Companies.csv')
 unicorn_master = unicorn_master.drop(['City' , 'Select Inverstors' , 'Financial Stage'] , axis=1)
 
+city = unicorn_master(['City'])
+
 st.title('Unicorn Companies Around the World')
 
 st.sidebar.write("""
@@ -29,7 +31,7 @@ st.sidebar.write("<a href='https://www.linkedin.com/in/aimanbadhrul/'>Aiman Badh
 
 choice = st.sidebar.selectbox(
     "Choose a country",   
-    ('Cool','Not cool'),
+    (city),
     index = 0)
 
 st.write(f"## Unicorn Companies from <font color='Aquamarine'>{choice}</font> ", unsafe_allow_html=True)
