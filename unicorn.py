@@ -28,14 +28,14 @@ Unicorn Companies Analysis App
 st.sidebar.write("<a href='https://www.linkedin.com/in/aimanbadhrul/'>Aiman Badhrulhisham </a>", unsafe_allow_html=True)
 
 
-choice = st.sidebar.radio(
-    "Choose a dataset",   
+choice = st.sidebar.selectbox(
+    "Choose a country",   
     ('Default', 'User-defined '),
     index = 0
     
 )
 
-st.write(f"## You Have Selected <font color='Aquamarine'>{choice}</font> Dataset", unsafe_allow_html=True)
+st.write(f"## Unicorn Companies from <font color='Aquamarine'>{choice}</font> ", unsafe_allow_html=True)
 
 def get_default_dataset(name):
     data = None
