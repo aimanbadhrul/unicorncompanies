@@ -43,5 +43,5 @@ unicorn_master = pd.read_csv('Unicorn_Companies.csv')
 st.write (unicorn_master.head(3))
 
 st.write (f"Shape of the dataset is {unicorn_master.shape}")
-st.write (f"The dataset has the following datatypes for the corresponding columns\n {unicorn_master.dtypes}")
+
 st.write (unicorn_master.describe())
