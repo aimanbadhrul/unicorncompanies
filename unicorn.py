@@ -38,5 +38,5 @@ choice = st.sidebar.selectbox(
 
 st.write(f"## Unicorn Companies from <font color='Aquamarine'>{choice}</font> ", unsafe_allow_html=True)
 
-unicorn_master = pd.read_csv("/Unicorn_Companies.csv")
+unicorn_master = pd.read_csv("https://github.com/aimanbadhrul/unicorncompanies/blob/main/Unicorn_Companies.csv")
 unicorn_master.head(3)
