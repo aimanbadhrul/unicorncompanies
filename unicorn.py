@@ -40,7 +40,7 @@ st.write (unicorn_master.describe())
 
 choice = st.sidebar.selectbox(
     "Choose a country",   
-    ({unicorn_master.country}),
+    ('Cool','Not cool'),
     index = 0
     
 )
