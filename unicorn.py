@@ -21,7 +21,7 @@ from sklearn.metrics import classification_report
 st.title('Machine Learning - CLASSIFICATION')
 
 st.sidebar.write("""
-This is my first step in learning Streamlit - Aiman
+Unicorn Companies Analysis App
 """)
 
 st.sidebar.write ("For more info, please contact:")
