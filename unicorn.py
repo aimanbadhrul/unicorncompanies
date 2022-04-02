@@ -18,13 +18,12 @@ from sklearn.metrics import classification_report
 
 
 
-st.title('Machine Learning - CLASSIFICATION')
+st.title('Unicorn Companies Around the World')
 
 st.sidebar.write("""
 Unicorn Companies Analysis App
 """)
 
-st.sidebar.write ("For more info, please contact:")
 
 st.sidebar.write("<a href='https://www.linkedin.com/in/aimanbadhrul/'>Aiman Badhrulhisham </a>", unsafe_allow_html=True)
 
