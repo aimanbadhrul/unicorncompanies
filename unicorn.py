@@ -39,5 +39,9 @@ choice = st.sidebar.selectbox(
 st.write(f"## Unicorn Companies from <font color='Aquamarine'>{choice}</font> ", unsafe_allow_html=True)
 
 unicorn_master = pd.read_csv('Unicorn_Companies.csv')
-unicorn_master = unicorn_master.drop (['City' , "Select Inverstors" , "Financial Stage" , "Portfolio Exits"])
+
 st.write (unicorn_master.head(3))
+
+print(f"Shape of the dataset is {unicorn_master.shape}")
+print(f"The dataset has the following datatypes for the corresponding columns\n {unicorn_master.dtypes}")
+unicorn_master.describe()
