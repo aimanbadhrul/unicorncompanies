@@ -37,3 +37,5 @@ choice = st.sidebar.selectbox(
 
 st.write(f"## Unicorn Companies from <font color='Aquamarine'>{choice}</font> ", unsafe_allow_html=True)
 
+unicorn_master = pd.read_csv("/kaggle/input/unicorn-companies-dataset/Unicorn_Companies.csv")
+unicorn_master.head(3)
