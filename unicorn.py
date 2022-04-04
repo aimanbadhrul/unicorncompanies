@@ -30,8 +30,8 @@ Unicorn Companies Analysis App
 st.sidebar.write("<a href='https://www.linkedin.com/in/aimanbadhrul/'>Aiman Badhrulhisham </a>", unsafe_allow_html=True)
 
 choice = st.sidebar.selectbox(
-    "Choose a country",   
-    ('UK','Australia','US'),
+    "Choose parameter",   
+    ('Valuation','Total Raised','Investor Count'),
     index = 0)
 
 st.write(f"## Unicorn Companies from <font color='Aquamarine'>{choice}</font> ", unsafe_allow_html=True)
