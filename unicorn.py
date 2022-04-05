@@ -19,6 +19,7 @@ from sklearn.metrics import classification_report
 
 unicorn_master = pd.read_csv('Unicorn_Companies.csv')
 unicorn_master = unicorn_master.drop(['City' , 'Select Inverstors' , 'Financial Stage'] , axis=1)
+unicorn_master = unicorn_master.dropna()
 
 
 
