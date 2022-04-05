@@ -21,6 +21,11 @@ unicorn_master = pd.read_csv('Unicorn_Companies.csv')
 unicorn_master = unicorn_master.drop(['City' , 'Select Inverstors' , 'Financial Stage'] , axis=1)
 unicorn_master = unicorn_master.dropna()
 
+labelencoder1 = LabelEncoder()
+labelencoder2 = LabelEncoder()
+
+unicorn_master['Country'] = labelencoder1.fit_transform(unicorn_master['Country'])
+
 
 
 st.title('Unicorn Companies Around the World')
